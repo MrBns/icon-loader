@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Escaper</title>
+  </head>
+  <body class="font-mono">
+    <main class="border min-h-screen max-w-[1000px] mx-auto bg-white">
+      <div class="border-b font-mono">
+        <h1 class="text-center text-xl py-3 font-bold">
+          Replace String Single/Double Quote with Escaped Double Quote (<span class="font-mono text-lg text-red-400 bg-gray-100 px-1 py-0.5 rounded">\"</span>)
+        </h1>
+      </div>
+      <div class="p-5">
+        <h1 class="text-xl text-center font-semibold text-gray-600 mb-5">Insert Your String</h1>
+        <textarea
+          name=""
+          id="input-area"
+          placeholder="Insert your String here"
+          class="border w-full p-4 rounded-lg max-h-[400px] min-h-[150px] resize-y bg-slate-50 font-mono focus:outline-none focus:ring focus:ring-slate-200"
+          rows="6"
+        ></textarea>
+      </div>
+      <div class="mt-10 p-5">
+        <h1 class="text-xl text-center font-semibold text-gray-600 mb-5">Output</h1>
+        <textarea
+          name=""
+          readonly
+          id="output-area"
+          placeholder="Output String will be here"
+          class="border font-mono select-text w-full p-5 rounded-lg resize-none bg-slate-50 focus:outline-none"
+          rows="6"
+        ></textarea>
+      </div>
+      <div class="text-center py-4 border-y mt-10">
+        <button class="px-6 py-2 bg-blue-600 text-white rounded disabled:opacity-40" disabled id="reParseBtn">Re parse</button>
+        <button class="px-6 py-2 bg-green-600 text-white rounded disabled:opacity-40" disabled id="copyBtn">Copy</button>
+        <button class="px-6 py-2 bg-red-500 text-white rounded disabled:opacity-40" disabled id="clearBtn">Clear</button>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
